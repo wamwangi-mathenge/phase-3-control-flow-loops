@@ -27,4 +27,9 @@ end
 
 def reverse_string(str)
   # your code here
+  reversed = ""
+  str.each_char do |char|
+    reversed = char + reversed
+  end
+  return reversed
 end
